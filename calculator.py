@@ -42,11 +42,11 @@ def undo():
 
 #utworzenie okna
 root = Tk()
-root.geometry("400x500")
+root.geometry("350x500")
 root.resizable(True,True)
 root.title("Calculator by P.Waksmundzki")
 
-display = Entry(root, font = 'arial 15 bold')
+display = Entry(root, font = 'arial 20 bold', justify= RIGHT)
 display.grid(row = 1, columnspan = 6, sticky = N+E+W+S)
 
 #tworzenie przycisków cyfry
