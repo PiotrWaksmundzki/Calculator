@@ -49,6 +49,18 @@ root.title("Calculator by P.Waksmundzki")
 display = Entry(root, font = 'arial 20 bold', justify= RIGHT)
 display.grid(row = 1, columnspan = 6, sticky = N+E+W+S)
 
+# konfiguracja dynamicznej siatki
+Grid.rowconfigure(root,1,weight=1)
+Grid.rowconfigure(root,2,weight=1)
+Grid.rowconfigure(root,3,weight=1)
+Grid.rowconfigure(root,4,weight=1)
+Grid.rowconfigure(root,5,weight=1)
+Grid.rowconfigure(root,6,weight=1)
+Grid.columnconfigure(root,0,weight=1)
+Grid.columnconfigure(root,1,weight=1)
+Grid.columnconfigure(root,2,weight=1)
+Grid.columnconfigure(root,3,weight=1)
+
 #tworzenie przycisków cyfry
 
 Button(root, text= "1", height= 5, width=10, command = lambda :get_variables(1)).grid(row=2,column=0, sticky=N+S+E+W)
