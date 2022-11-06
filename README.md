@@ -1,2 +1,2 @@
 # Calculator
-Calculator, simple app with GUI interface with let us for basic math operations.
+A simple app with GUI, let us for basic math operations. 
